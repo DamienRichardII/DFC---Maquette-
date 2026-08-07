@@ -189,9 +189,9 @@ section { padding: 120px 6vw; position: relative; }
   display: flex; align-items: center; justify-content: space-between;
   max-width: var(--container); margin: 0 auto;
 }
-.navbar__logo img { height: 46px; width: auto; transition: var(--transition); filter: brightness(0) invert(1); }
+.navbar__logo img { height: 64px; width: auto; object-fit: contain; transition: var(--transition); }
 .navbar.is-scrolled { background: rgba(250,248,244,.92); backdrop-filter: blur(10px); padding: 12px 6vw; box-shadow: 0 6px 30px rgba(0,0,0,.06); }
-.navbar.is-scrolled .navbar__logo img { filter: none; height: 38px; }
+.navbar.is-scrolled .navbar__logo img { height: 52px; }
 
 .navbar__nav { display: flex; align-items: center; gap: 44px; }
 .navbar__nav ul { list-style: none; display: flex; gap: 34px; margin: 0; padding: 0; }
@@ -402,7 +402,7 @@ section { padding: 120px 6vw; position: relative; }
   display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 60px; padding-bottom: 60px;
   border-bottom: 1px solid rgba(255,255,255,.08);
 }
-.footer__brand img { height: 42px; margin-bottom: 18px; filter: brightness(0) invert(1); }
+.footer__brand img { height: 96px; width: auto; object-fit: contain; margin-bottom: 18px; }
 .footer__brand p { font-size: 0.88rem; max-width: 260px; }
 .footer__nav h4, .footer__contact h4 {
   color: #fff; font-family: var(--font-body); font-size: 0.78rem; text-transform: uppercase;

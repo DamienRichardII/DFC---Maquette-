@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "accessoires",
+    "name": "Accessoires",
+    "folder": "Accessoires",
+    "old_category_names": [
+      "Accessoires"
+    ],
+    "productCount": 0
+  },
+  {
+    "slug": "epicerie-ethnique",
+    "name": "Epicerie Ethnique",
+    "folder": "Epicerie Ethnique",
+    "old_category_names": [
+      "Epicerie éthnique"
+    ],
+    "productCount": 0
+  },
+  {
+    "slug": "maison-decoration",
+    "name": "Maison et décoration",
+    "folder": "Maison et décoration",
+    "old_category_names": [
+      "Maison et décoration"
+    ],
+    "productCount": 0
+  },
+  {
+    "slug": "mode",
+    "name": "Mode",
+    "folder": "Mode",
+    "old_category_names": [
+      "Mode"
+    ],
+    "productCount": 0
+  },
+  {
+    "slug": "perruques",
+    "name": "Perruques",
+    "folder": "Perruques",
+    "old_category_names": [
+      "Perruques"
+    ],
+    "productCount": 0
+  },
+  {
+    "slug": "secrets-de-femme",
+    "name": "Secrets de femme",
+    "folder": "Secrets de femme",
+    "old_category_names": [
+      "Secrets de Femmes"
+    ],
+    "productCount": 0
+  },
+  {
+    "slug": "soins",
+    "name": "Soins",
+    "folder": "Soins",
+    "old_category_names": [
+      "Bien-être"
+    ],
+    "productCount": 22
+  }
+]

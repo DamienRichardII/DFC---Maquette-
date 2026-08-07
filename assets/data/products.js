@@ -1,0 +1,735 @@
+// Catalogue DFC — généré à partir de l'ancien site + assets/Ancien site/
+// Ne pas éditer les prix/descriptions manuellement : relancer scripts/build_catalog.py
+// (source de vérité : dieynissa-migration/data/products.json)
+const DFC_CATEGORIES = [
+  {
+    "slug": "accessoires",
+    "name": "Accessoires",
+    "folder": "Accessoires",
+    "old_category_names": [
+      "Accessoires"
+    ],
+    "productCount": 0
+  },
+  {
+    "slug": "epicerie-ethnique",
+    "name": "Epicerie Ethnique",
+    "folder": "Epicerie Ethnique",
+    "old_category_names": [
+      "Epicerie éthnique"
+    ],
+    "productCount": 0
+  },
+  {
+    "slug": "maison-decoration",
+    "name": "Maison et décoration",
+    "folder": "Maison et décoration",
+    "old_category_names": [
+      "Maison et décoration"
+    ],
+    "productCount": 0
+  },
+  {
+    "slug": "mode",
+    "name": "Mode",
+    "folder": "Mode",
+    "old_category_names": [
+      "Mode"
+    ],
+    "productCount": 0
+  },
+  {
+    "slug": "perruques",
+    "name": "Perruques",
+    "folder": "Perruques",
+    "old_category_names": [
+      "Perruques"
+    ],
+    "productCount": 0
+  },
+  {
+    "slug": "secrets-de-femme",
+    "name": "Secrets de femme",
+    "folder": "Secrets de femme",
+    "old_category_names": [
+      "Secrets de Femmes"
+    ],
+    "productCount": 0
+  },
+  {
+    "slug": "soins",
+    "name": "Soins",
+    "folder": "Soins",
+    "old_category_names": [
+      "Bien-être"
+    ],
+    "productCount": 22
+  }
+];
+
+const DFC_PRODUCTS = [
+  {
+    "id": 150,
+    "name": "BEURRE DE CACAO 450G",
+    "slug": "beurre-de-cacao-450g",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 16.0,
+    "regularPrice": 16.0,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Le beurre de cacao est une matière grasse végétale qui s’utilise aussi en cosmétique. Mais en cuisine, on l’utilise essentiellement pour la création de confiseries en chocolat, patisserie et pour la réalisation de pâte à tartiner, de crème glacée, de dessert, etc.",
+    "description": "",
+    "images": {
+      "main": "assets/Ancien site/Soins/beurre-cacao-400G.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/beurre-de-cacao-450g/",
+    "migration": {
+      "imageMatchConfidence": 0.9,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": "Nom de fichier indique 400G alors que le titre produit indique 450G — écart de grammage à vérifier avec la cliente, mais correspondance produit non ambiguë (seul beurre de cacao du catalogue)."
+    }
+  },
+  {
+    "id": 139,
+    "name": "Beurre de karité",
+    "slug": "beurre-de-karite",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 6.5,
+    "regularPrice": 6.5,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Nourrissant, apaisant et cicatrisant, le beurre de karité protège la peau et les cheveux des agressions du climat (soleil, vent, froid etc).",
+    "description": "Nourrissant, apaisant et cicatrisant, le beurre de karité protège la peau et les cheveux des agressions du climat (soleil, vent, froid etc). Il convient très bien à toutes peaux sèches, abîmées ou irritées, et même celle des tout-petits. Il est également parfait pour les cheveux crépus, lisse et frisé qu’il discipline et nourrit en profondeur. Notre beurre de karité est NON RAFFINÉ afin de conserver 100% des propriétés du karité.\nLes bienfaits : irritées, gercées, abîmées, matures, fragiles, peaux des bébés, cheveux ternes, cassants, contre les uv, cicatisant, apaisant, anti age, anti vergeture, nourrissant et hydratant\npeut être utilisé pour vos préparation cosmétique et en cuisine.",
+    "images": {
+      "main": "assets/Ancien site/Soins/Beurre-karité.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/beurre-de-karite/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 134,
+    "name": "DÉTOX PUISSANT ANCESTRAL AU KHAMARÉ 80G",
+    "slug": "detox-puissant-ancestral-au-khamare-80g",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 17.0,
+    "regularPrice": 17.0,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Une cure détox à base de khamaré et multi plante d’afrique n’est pas un régime mais plutôt un programme destiné à nettoyer l’organisme pour l’aider à mieux “fonctionner”.",
+    "description": "Un régime Détox c’est l’alimentation qu’on va mettre en place de façon à favoriser l’élimination des déchets, des toxines et in fine des graisses, donc pour perdre du poids. La Détox, ça veut dire :  j’élimine mes toxines, j’élimine les déchets en excès que j’ai dans mon organisme, j’élimine aussi les graisses qui sont des déchets de l’organisme.\nUTILISATION\nAprés ébulition d’eau chaude mettre le mélange de plante et laisser infuser vingt minute\nPRENDRE UNE CUILLÈRE A CAFÉ POUR DEUX GRANDE TASSE, à consommer de préférence le matin à jeun pendant 1 à 15 jours",
+    "images": {
+      "main": "assets/Ancien site/Soins/detox-puissant-ancestral-khamaré-80G.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/detox-puissant-ancestral-au-khamare-80g/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 95,
+    "name": "FEUILLE DE DJEKA 40G",
+    "slug": "feuille-de-djeka-40g",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 10.0,
+    "regularPrice": 10.0,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Les feuilles de DJEKA sont utilisées dans la médecine traditionnelle Africaine et ont des vertus sédatives et antispasmodiques et cicatrisantes.",
+    "description": "Au-delà de ses propriétés médicinales ( Antibiotique et désinfectant) , Les feuilles de DJEKA à une autre vertu, plus coquine.. encore plus intimiste, une vertu qui décuple le plaisir.En Afrique , ces feuilles témoignent de l’efficacité pour rétrécir le vagin … C’est un produit naturel sans effets secondaires à la portée de tous\nLes bienfaits du djeka :\n- Détoxifie et revitalise l’utérus.\n- Tonifie les muscles du vagin et le resserre\n- Nettoie le ventre de ses impuretés et rééquilibre la flore vaginale.\n- Apaise les démangeaisons vaginales et supprime les mauvaises odeurs.\n- Calme les règles douloureuses.\n- Soigne les troubles gastro-intestinaux et stimule l’appétit.\n- Anti-bactérien et anti-inflammatoire naturel, le Djéka soigne les blessures occasionnées par l’accouchement ainsi que les infections urinaires\nCONSEILS D’UTILISATION\nInfusion : lavez soigneusement vos feuilles de Djeka et faites-les bouillir pendant 10 minutes. Filtrez et buvez à volonté toute la journée.\nToilette intime : Lavez et faites bouillir les feuilles pendant 5 minutes. Laissez la décoction tiédir et utilisez-la pour la toilette intime.\nEN VAPEUR : faites bouillir les feuilles et renversez la décoction encore fumante dans un récipient adapté. Accroupissez-vous au-dessus pour un bain de vapeur. Couvrez-vous avec une couverture et profitez de ce moment bien-être pendant 20 à 25 minutes.",
+    "images": {
+      "main": "assets/Ancien site/Soins/feuille-djeka.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/feuille-de-djeka-40g/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 142,
+    "name": "HUILE DE COCO PUR 450G",
+    "slug": "huile-de-coco-pur-450g",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 16.0,
+    "regularPrice": 16.0,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "100% pure et naturelle, intégrale, non fractionnée, non modifiée, extra-vierge, première pression à froid, crue, sans aucun traitement chimique, qualité cosmétique et alimentaire",
+    "description": "L’huile de coco sur les cheveux est particulièrement efficace pour leur redonner force et brillance. C’est notamment l’acide laurique qu’elle contient qui permet de nourrir intensément les racines. Pour profiter pleinement de ses bienfaits, le mieux est de réaliser un masque d’huile de coco. Voici comment procéder :\n- Appliquez directement un peu d’huile sur toute la chevelure en insistant sur les pointes ;\n- Enveloppez vos cheveux dans une serviette ;\n- Laissez poser quelques minutes ;\n- Rincez soigneusement vos cheveux.\nCe type de soin appliqué une fois par semaine permet de nourrir intensément les cheveux trop secs.\nL’huile de coco pour la peau : un remède anti-vieillissement\nSi l’huile de coco nourrit le cuir chevelu, il en est de même pour la peau. Riche en vitamine E et A, l’huile de coco peut être utilisée comme huile anti-âge. En effet, ses propriétés anti-oxydantes et anti radicaux libres permettent de lutter efficacement contre les signes de vieillissement de la peau.\nDes dents plus blanches grâce à l’huile de coco\nC’est l’un des bienfaits les plus étonnants. Qui aurait pu imaginer que l’huile de coco pouvait avoir un pouvoir blanchissant sur les dents ? Associée à du bicarbonate de soude, elle fait même office de dentifrice. La pâte ainsi créée renforce et blanchit l’émail des dents, tout en éliminant les toxines présentes dans la bouche. En bain de bouche le matin, l’huile de coco a le don d’absorber les microbes et les bactéries et de prévenir les caries.\nHuile de coco pour le visage : un remède contre l’acné\nOutre ses vertus nourrissantes, l’huile de coco possède également un pouvoir purifiant et anti-bactérien. Elle lutte contre l’acné et évite la prolifération de boutons. Grâce à son action purifiante, l’huile de coco peut être utilisée comme démaquillant. Au niveau des yeux, même le mascara waterproof ne lui résiste pas et elle permet notamment de renforcer les cils.\nL’huile de coco comme allié minceur et anti-vergetures\nLes femmes enceintes et les jeunes mamans en raffolent, car elle a le don de lutter efficacement contre les vergetures. Un massage quotidien à l’huile de coco permet en effet d’assouplir, nourrir et hydrater intensément la peau. Ainsi, l’évolution des vergetures naissantes peut être plus facilement stoppée. Côté minceur, associée au sport, l’huile de coco peut être consommée pour procurer au corps une bonne quantité d’oméga-3, un acide gras utile pour optimiser la performance physique.\nDe plus, elle contribue à réduire les sensations de faim.\nComment reconnaître une bonne huile de coco ? Tout est dans la couleur.\nPour profiter de tous ses bienfaits, il est essentiel de bien choisir son huile de coco. Avant tout, une huile de coco vierge, bio et issue de pression à froid vous garantira une bonne efficacité. Ensuite, la couleur de l’huile de coco est déterminante. Une huile vierge de qualité est blanche dans sa version graisseuse et limpide et aussi claire que de l’eau dans sa version liquide (lorsqu’elle est exposée à la chaleur). Une huile de coco dont la couleur tire sur le jaune est signe d’une altération ou d’une mauvaise qualité (huile non vierge).\nHuile de coco : les vertus pour la santé\nUne action antibactérienne efficace\nLes noix de coco proviennent des lieux tropicaux. Pour pouvoir se développer dans ce type de climat, où les micro-organismes prolifèrent, la noix de coco se crée naturellement un système antibactérien grâce à ses chaînes moyennes d’acide gras.\nL’huile de coco contient donc naturellement des MCT (« Medium Chain Triglycerides », que nous pouvons traduire par « chaîne moyenne d’acides gras »). Ce sont ces substances qui font de l’huile de coco un remède antimicrobien puissant.\nAntifongique naturel, l’huile de coco est particulièrement efficace pour lutter contre la prolifération des bactéries de type Candida Albicans, que l’on retrouve dans les mycoses et les troubles intestinaux.\nDes propriétés anti-inflammatoires reconnues\nVictime d’un coup de soleil ? Les propriétés très hydratantes et adoucissantes de l’huile de coco sont parfaites pour apaiser rapidement une brûlure due à un coup de soleil. Qui plus est, même sans rougeur apparente, l’application d’une huile de coco après une exposition protège la peau de la déshydratation et optimise la durée du bronzage. D’une manière générale, en cas de peau présentant un aspect enflammé, l’huile de coco représente un excellent remède cutané.\nUne réduction des risques cardiovasculaire\nLes acides gras saturés contenus dans l’huile de coco appartiennent à la famille des acides triglycérides à chaîne moyenne. Contrairement à de nombreuses graisses saturées, l’huile de coco présente l’avantage de pouvoir être rapidement absorbée par l’organisme. Ainsi, le risque de laisser des résidus de graisse au niveau des artères est amoindri et le bon fonctionnement du système cardiaque est préservé.\nUn lubrifiant naturel pour éviter les irritations intimes\nSa texture huileuse associée à ses propriétés antibactériennes fait de l’huile de coco un excellent lubrifiant. Chez la femme, le vagin et les muqueuses sont ainsi protégés des irritations et des risques de développer une mycose. Toutefois, l’application d’huile de coco comme lubrifiant n’est pas compatible avec l’utilisation d’un préservatif.\nL’huile de coco : la meilleure huile de friture ? Contrairement à de nombreuses huiles qui supportent mal la chaleur et qui peuvent s’altérer à la cuisson, l’huile de coco résiste parfaitement aux très fortes températures. Du plus, ses qualités nutritionnelles en font une excellente huile de friture.",
+    "images": {
+      "main": "assets/Ancien site/Soins/huile-pur-coco-450G.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/huile-de-coco-pur-450g/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 40,
+    "name": "KHAMARÉ NOUROUTÉ GRAND MÈRE",
+    "slug": "khamare-nouroute-grand-mere",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 12.0,
+    "regularPrice": 12.0,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "",
+    "description": "Détox utérin puissant est un composé de plusieurs plantes naturelles du sénégal qui ont pour but de purifier l’utérus et l’ensemble de l’appareil génital féminin et masculin.\nLa cure de détoxification permet de purifier votre appareil génitale, Cela est d’autant plus valable en période de préconception\nPeut être utilisé par l’homme.\nCOMMENT LE BOIRE\nMettez la plante entière dans trois litres d eau bouillante pendant 5 minutes et\nLaisser infuser toute une nuit. boire un grand verre chaud à jeun pendant six jour .vous pouvez réutiliser la plante",
+    "images": {
+      "main": "assets/Ancien site/Soins/khamaré-nourouté.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/khamare-nouroute-grand-mere/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 68,
+    "name": "KHAMARÉ OU VÉTIVÉR",
+    "slug": "khamare-ou-vetiver",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 6.0,
+    "regularPrice": 6.0,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Les racines de khamaré, aussi appelés vétiver, Gongoli ou Tiep sont un remède miracle pour les femmes. 100% naturelles, ces racines de khamaré sont trés important dans la vie d’une femme. Peut être utilisé par l’homme.",
+    "description": "Boire régulièrement une décoction bouillie de la tige de khamaré apporte beaucoup de bienfaits à la femme. Elle peut être utile pour la toilette intime de la femme. Par exemple un bain à vapeur permet de lutter contre les mauvaises odeurs vaginales. De surcroît, elle est aussi efficace pour lutter :\nContre la sécheresse vaginale ;\nLes infections urinaires ou les démangeaisons ;\nLes pertes intimes et autres affections génitales.\nDe plus, après un accouchement, la femme peut utiliser la solution de racines de vétiver pour apaiser les douleurs internes du ventre et protéger la flore vaginale. Elle peut continuer à la prendre même en allaitant son bébé. Grâce à ses vertus curatives, la tige de khamaré apaise les premières coliques du nourrisson et limite les ballonnements.\nC’est aussi un remède recommandé pour les femmes ayant des douleurs pendant la menstruation. Il calme les maux de ventre et favorise le rejet des déchets issus du mauvais sang. D’autre part, il raffermit les muscles du vagin et constitue un excellent aphrodisiaque naturel pour la libido.\nAvec les propriétés purifiantes et désinfectantes qu’elles présentent, boire une infusion à base de racines de vétiver nettoie le ventre et purifie le corps que ce soit pour l’homme ou la femme. Pour un résultat efficace, une utilisation régulière est conseillée.",
+    "images": {
+      "main": "assets/Ancien site/Soins/khamaré-vétiver.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/khamare-ou-vetiver/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 106,
+    "name": "LE FRUIT 4 CÔTÉ / L’ÉSÉSE",
+    "slug": "106",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 12.0,
+    "regularPrice": 12.0,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Très utilisé en médecine traditionnelle. Il est reconnu pour ses nombreux bienfaits.",
+    "description": "Très utilisé en médecine traditionnelle. Il est reconnu pour ses nombreux bienfaits dans le traitement de certaines maladies comme l’asthme, le diabète, l’hypertension, le mal de dos, fibrome.\nIl a longtemps été utilisé dans la médecine traditionnelle contre les règles douloureuses, comme contraceptif et pour le soin de la peau.\nTrès efficace aussi contre les démangeaisons vaginales, il permet donner une bonne odeur intime à la femme grâce à son parfum mais aussi utilisé comme encens, il parfume la maison.\nAstuce de grand-mère\ndémangeaison vaginales et odeurs intimes\nDans une casserole d’eau, ajoutez l’ésese et laissez bouillir entièrement.\nFaites son bain intime avec le mélange obtenu.\nStérilité et problème d’ovulation, règles douloureuses, fibrome, myome, kyste, trompe bouchée, troubles des règles, règles noirâtres.\nCertains peuples en Afrique l’ont longtemps pour traiter la stérilité chez la femme.\nBuvez-en, il nettoie de l’intérieur et favorise la fertilité.\nTrempez le 4 côté dans 1 litre et demi d’eau et attendez 24 h buvez un demi verre le matin et soir,\nfaites un lavement 1 jour sur 2.\nUne semaine après, le faire 3 fois en espaçant d’un jour.\nPour le soin de peau\nAprès l’accouchement, pour prendre soin de la mère et de l’enfant. Mettez-en dans du beurre de karité.\nUtilisez la préparation après le bain comme crème de jour et nuit pour la mère et bébé. Il nettoie le teint et protège des nombreux problèmes de peau.\n- Pour ceux qui croient en efficacité des encens\n- Lorsque l’ésese est brûlé dans la maison comme de l’encens, il parait qu’il chasse les mauvais esprits et attire la chance.\n- Certains le mette dans le sac à main et dans la voiture.\nContre indication\n- Déconseillé aux femmes enceintes",
+    "images": {
+      "main": "assets/Ancien site/Soins/le-fruit-4-coté.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/106/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": "Slug d'origine numérique ('106') sur l'ancien site — nom réel du produit : 'LE FRUIT 4 CÔTÉ / L’ÉSÉSE'."
+    }
+  },
+  {
+    "id": 46,
+    "name": "LE SÉNÉ DU YÉMEN 50G",
+    "slug": "le-sene-du-yemen-50g",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 8.9,
+    "regularPrice": 8.9,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "",
+    "description": "Les feuilles de séné amélioreraient également le transit intestinal et favoriseraient l’action de la flore intestinale.\nSÉNÉ : la plante médicinale de référence pour lutter contre la constipation passagère. Originaire yemen, le séné (cassia angustifolia) est connu pour les propriétés laxatives de ses feuilles et de ces fruits. Elles ont la particularité d’accélérer le transit intestinal et de dynamiser les mouvements péristaltiques.\nLe produit naturel sana makki en arabe séné est aussi utilisé pour pratiquer la roqya, pour évacuer une sorcellerie bue ou mangée. Son utilisation dans le cadre d’une roqya permet d’évacuer le mal par les selles\nNe pas dépasser 8 jour de cure, a consommé en petite quantité sous les conseils d’un médecin, généralement il recommande de consommé entre 1g et 2g par jour\nBoire une tasse de tisane 1 à 2 fois par jour",
+    "images": {
+      "main": "assets/Ancien site/Soins/séné-yemen.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/le-sene-du-yemen-50g/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 147,
+    "name": "MIEL DE NIGELLE HABBA SAOUDA",
+    "slug": "miel-de-nigelle-habba-saouda",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 25.0,
+    "regularPrice": 25.0,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Miel de nigelle ou habba saouda\nBoostez votre immunité avec des produits sains et naturels connus pour leurs vertues",
+    "description": "Les bienfaits de ce miel de nigelle\nCette plante confère d’excellent atout à ce miel, notamment son côté thérapeutique et historique parmi lesquelles on peut citer :\nPermet de renforce le système immunitaire.\nMeilleur substitut au sucre.\nEnergisant pour l’organisme.\nEn l’associant à certains ingrédients il traite les soucis liés aux maladies suivant: maux de tête, rhume, vertiges, etc.\nCicatrisant efficace et règle les problèmes de peau comme l’eczéma et autre.\n\nUtilisation\nLe miel du sine saloum (senegal) de Nigelle peut se consommer simplement par plaisir ou sur des tartines, dans des boissons chaudes en substitut au sucre etc.\nPour profiter pleinement de ses vertus, il est préférable d’en consommer au moins 2 fois par jour.\nAlors procurez-vous ce miel à base de fleur de Nigelle et profitez de ses nombreux bienfaits sur l’organisme",
+    "images": {
+      "main": "assets/Ancien site/Soins/miel-nigelle-habba-saouda.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/miel-de-nigelle-habba-saouda/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Epicerie éthnique",
+      "mergedDuplicateIds": null,
+      "note": "Rangé par la cliente dans Soins alors que catégorisé 'Epicerie éthnique' sur l'ancien site — conservé dans Soins conformément au classement local (signal fort), catégorie d'origine tracée dans metadata."
+    }
+  },
+  {
+    "id": 130,
+    "name": "NIGELLE D’ÉGYPTE HABBA SAWDA",
+    "slug": "nigelle-degypte-habba-sawda",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 8.9,
+    "regularPrice": 8.9,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "La nigelle un remède pour toutes les maladies, sauf la mort ». Découvrez toutes les vertus des graines de nigelles pour la santé,",
+    "description": "La nigelle est reconnue pour son action anti-inflammatoire, analgésique, antibactérienne, antifongique, antioxydante, antivirale, antidiabétique, hypotensive, stimulante, digestive et diurétique, système cardio vasculaire",
+    "images": {
+      "main": "assets/Ancien site/Soins/Nigelle-egypte-habba-sawda.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/nigelle-degypte-habba-sawda/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 111,
+    "name": "POMMADE FUNEGREC 200G",
+    "slug": "pommade-funegrec-200g",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 22.0,
+    "regularPrice": 22.0,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "POMMADE FENUGREC GROSSISSANTE (fesses, hanches, seins etc…)",
+    "description": "Comme l’indique son nom c’est une Crème naturelle à base de Fenugrec africain et nigelle naturel qui fait grossir l’endroit du corps où elle est appliquée (fesses, hanches, seins etc…)\nElle a aussi la propriété de raffermir surtout conseillée aux femmes qui viennent d’accoucher pour raffermir leur poitrine…\nMode d’utilisation: Appliquer la crème sur la partie désirée du corps puis faire le massage circulaire pendant 5 min\nConseil d’utilisation: Utilisez la crème 2 fois par jour pendant 8 semaines consécutives.",
+    "images": {
+      "main": "assets/Ancien site/Soins/pommade-funegrec.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/pommade-funegrec-200g/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": "Le titre produit orthographie 'FUNEGREC' (déjà présent ainsi sur l'ancien site) alors que la description parle de 'Fenugrec' — coquille d'origine conservée telle quelle (aucune réécriture commerciale)."
+    }
+  },
+  {
+    "id": 79,
+    "name": "POUDRE DE CHÉBÉ",
+    "slug": "poudre-de-chebe",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 8.9,
+    "regularPrice": 8.9,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Notre gamme chébé est un traitement capillaire bio est formulée avec de la poudre de chébé 100% naturelle.",
+    "description": "Le CHÉBÉ sert à nourrir, hydrater et améliorer la rétention d’humidité des mèches de cheveux. Ceci, à son tour, aide à éviter la casse, la chute et permet aux cheveux d’atteindre leurs potentiels sur toutes leurs longueurs tout en encourageant l’épaisseur et en améliorant la définition des boucles.",
+    "images": {
+      "main": "assets/Ancien site/Soins/poudre-chébé.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/poudre-de-chebe/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 115,
+    "name": "POUDRE KHAMARÉ EXPLOSIF GRAND MÈRE 205G",
+    "slug": "poudre-khamare-explosif-grand-mere-205g-2",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 8.5,
+    "regularPrice": 8.5,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Un puissant aphrodisiaque ancéstral et lubrificateur naturel sera vous apporter du bien être et pimenter votre couple.",
+    "description": "En toilette intime dans une bouteille d’eau d’1.5L à l’aide d’une cuillère à soupe, une cuillère à café dans votre yaourt, thé ou même pure. Il nettoie l’appareil génitale, augmente la libido, améliore les bonnes odeurs de sécrétions et diminue les douleurs liées aux menstrues.",
+    "images": {
+      "main": "assets/Ancien site/Soins/poudre-khamaré-explosif-205G.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/poudre-khamare-explosif-grand-mere-205g-2/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": [
+        42
+      ],
+      "note": null
+    }
+  },
+  {
+    "id": 124,
+    "name": "SAKHÉ SIKHÉ TRAITEMENT 3 JOURS 60G",
+    "slug": "sakhe-sikhe-traitement-3-jours-60g",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 10.9,
+    "regularPrice": 10.9,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Remède ancestral à base de plantes sont idéales pour permettre à l’utérus de se nettoyer en profondeur.",
+    "description": "Des tisanes réalisées à partir de nombreuses plantes peuvent être utilisées pour stimuler et nettoyer votre utérus après les règles, l’accouchement, une fausse couche, fibrome. le traitement 3 jours améliorer la tonicité  de la cavité utérine et soulager les symptômes de la ménopause.\nmode d’utilisation :\nDiviser le paquet en deux\nFaire bouillir 5 minutes dans 1,5 litre d’eau.\nlaisser infuser toute la journée et à consommer pendant 3 jours sans arrêt et a utiliser tous les trois mois",
+    "images": {
+      "main": "assets/Ancien site/Soins/sakhé-sikhé-traitement-3J-60G.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/sakhe-sikhe-traitement-3-jours-60g/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 121,
+    "name": "SAVON AU CURCUMA 135G",
+    "slug": "savon-au-curcuma-135g",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 8.9,
+    "regularPrice": 8.9,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "savon au curcuma illuminateur de teint, élimine les taches noires et unifie le teint.",
+    "description": "Le savon curcuma inhibe la production de mélanine, le pigment responsable des tâches brunes et d’autres types d’hyperpigmentation. Avec une utilisation régulière, un produit à base de curcuma peut aider à faire disparaître naturellement ces imperfections pour donner à la peau un aspect plus uniforme !",
+    "images": {
+      "main": "assets/Ancien site/Soins/savon-curcuma-135G.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/savon-au-curcuma-135g/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 117,
+    "name": "SAVON BAOBAB ET NIGELLE 125G",
+    "slug": "savon-baobab-et-nigelle-125g",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 8.9,
+    "regularPrice": 8.9,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Ce savon végétal au fruit du baobab authentique est fabriqué artisanalement par saponification à froid, Pour produire un savon de qualité, riche en propriétés.",
+    "description": "Ce savon est enrichi en beurre de karité naturellement riche en principes actifs hydratants et adoucissants, il raffermit la peaux.\nCe savons est idéal pour une hygiène corporelle et intime renforcée. Il est aussi très utilisé dans les soins des peaux à tendance acnéique.\nIngrédients INCI:\nHuile de Graines de Nigelle d’Éthiopie\nBeurre de cacao\nBeurre de karité\nExtrait de fruits du baobab\nHuile de palme\nEau",
+    "images": {
+      "main": "assets/Ancien site/Soins/savon-baobab-nigelle-125G.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/savon-baobab-et-nigelle-125g/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 72,
+    "name": "SAVON DUDU OSUM",
+    "slug": "savon-dudu-osum",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 6.5,
+    "regularPrice": 6.5,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Le savon noir africain Dudu-Osun est un savon fabriqué à la main en Afrique, dans le respect des traditions. Il ne contient que des produits naturels et notamment du beurre de karité, du bois de cam, du jus de citron et du miel.",
+    "description": "Le savon noir de Dudu-Osun apaise, hydrate et nourrit le corps, le visage et même les cheveux. Mousseux et rafraîchissant, il agit très efficacement pour estomper les taches foncées, les cicatrices causées par les boutons d’acné et traiter les désordres cutanés.\nAutre usage du véritable savon noir Dudu-Osun : il peut faire office de shampoing, et si vous avez envie d’éclaircir la couleur naturelle de vos cheveux.",
+    "images": {
+      "main": "assets/Ancien site/Soins/savon-dudu-osum.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/savon-dudu-osum/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 97,
+    "name": "SAVON NOIR MOU DU NIGÉRIA",
+    "slug": "savon-noir-mou-du-nigeria",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 10.0,
+    "regularPrice": 10.0,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Ce savon vous débarrasse des impuretés et nettoie la peau en profondeur.",
+    "description": "Ce savon vous débarrasse des impuretés et nettoie la peau en profondeur.",
+    "images": {
+      "main": "assets/Ancien site/Soins/savon-noir-mou-nigeria.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/savon-noir-mou-du-nigeria/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  },
+  {
+    "id": 94,
+    "name": "SOIN POUR CHEVEUX AU CHÉBÉ",
+    "slug": "soin-pour-cheveux-au-chebe",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 0.0,
+    "regularPrice": 0.0,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Notre gamme chébé est un traitement capillaire bio est formulée avec de la poudre de chébé 100% naturelle.",
+    "description": "Le CHÉBÉ sert à nourrir, hydrater et améliorer la rétention d’humidité des mèches de cheveux. Ceci, à son tour, aide à éviter la casse, la chute et permet aux cheveux d’atteindre leurs potentiels sur toutes leurs longueurs tout en encourageant l’épaisseur et en améliorant la définition des boucles.",
+    "images": {
+      "main": "assets/Ancien site/Soins/soin-cheveux-chébé.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "out_of_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/soin-pour-cheveux-au-chebe/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": "Produit en rupture de stock / non achetable sur l'ancien site (is_in_stock=false)."
+    }
+  },
+  {
+    "id": 113,
+    "name": "THIOKHO POUDRE DE SOUCHET 205G",
+    "slug": "thiokho-poudre-de-souchet-205g-2",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 8.5,
+    "regularPrice": 8.5,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "Le souchet est aussi un aphrodisiaque pour les femmes comme lubrifiant naturel.",
+    "description": "La poudre de plaisir est un produit destiné aux femme et aux hommes ayant une baisse de libido, un vrai booster.Le souchet est aussi un aphrodisiaque pour les femmes comme lubrifiant naturel.\nPrendre une cuillerée à café : DANS DU LAIT OU YAOURT OU LAIT VÉGÉTAL 3O MINUTE AVANT l’ACTE SEXUEL.",
+    "images": {
+      "main": "assets/Ancien site/Soins/thioko-poudre-souchet.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/thiokho-poudre-de-souchet-205g-2/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": [
+        44
+      ],
+      "note": null
+    }
+  },
+  {
+    "id": 127,
+    "name": "TISANE MIXE DE KHAMARÉ/VÉTIVER",
+    "slug": "tisane-mixe-de-khamare-vetiver",
+    "category": {
+      "name": "Soins",
+      "slug": "soins"
+    },
+    "price": 8.5,
+    "regularPrice": 8.5,
+    "salePrice": null,
+    "currency": "EUR",
+    "shortDescription": "TISANE EXPLOSIF POUR PRÉPARER VOTRE CORPS",
+    "description": "Tisane explosif pour vous mesdames\nDétox\nBonne odeur des liquides organiques\nFacilite la lubrification de la femme\nPurifie le système gynécologique\nPréparation : Faire bouillir pendant 5 minutes TOUS LE CONTENUE puis laisser infuser toute la journée. Retirer les tiges ensuite mettre l’infusion en bouteille.\nVous pouvez boire 2  tasses chaud par jour. vous pouvez répéter l opération AVEC LE MÊME CONTENUE sur un litre et demi.",
+    "images": {
+      "main": "assets/Ancien site/Soins/tisane-mixe-khamaré-vétiver.png",
+      "gallery": []
+    },
+    "attributes": {},
+    "variations": [],
+    "stockStatus": "in_stock",
+    "oldUrl": "https://dieynissa-fashion-creation.com/produit/tisane-mixe-de-khamare-vetiver/",
+    "migration": {
+      "imageMatchConfidence": 1.0,
+      "verified": true,
+      "oldCategory": "Bien-être",
+      "mergedDuplicateIds": null,
+      "note": null
+    }
+  }
+];
