@@ -10,14 +10,15 @@
   .testimonials__grid { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr 1fr; }
   .lookbook__grid { grid-auto-rows: 180px; }
+  .contact-details__grid { grid-template-columns: 1fr; gap: 20px; }
 }
 
 /* ---------- Small tablet / large mobile ≤860px ---------- */
 @media (max-width: 860px) {
   section { padding: 90px 6vw; }
 
-  .navbar__logo img { height: 54px; }
-  .navbar.is-scrolled .navbar__logo img { height: 46px; }
+  .navbar__logo img { height: 78px; }
+  .navbar.is-scrolled .navbar__logo img { height: 64px; }
   .footer__brand img { height: 76px; }
 
   .navbar__nav {
@@ -43,6 +44,8 @@
   .univers__inner { grid-template-columns: 1fr; gap: 40px; }
   .univers__media img { height: 420px; }
   .univers__frame { display: none; }
+
+  .page-banner { padding: 140px 6vw 70px; }
 
   .collections__grid { grid-template-columns: 1fr 1fr; gap: 18px; }
   .collection-card__media { height: 280px; }
@@ -74,12 +77,14 @@
   .hero__actions .btn { width: 100%; }
   .hero__scroll { display: none; }
 
-  .navbar { padding: 16px 5vw; }
-  .navbar__logo img { height: 44px; }
-  .navbar.is-scrolled .navbar__logo img { height: 40px; }
+  .navbar { padding: 14px 5vw; }
+  .navbar__logo img { height: 62px; }
+  .navbar.is-scrolled .navbar__logo img { height: 52px; }
   .footer__brand img { height: 64px; }
 
   .univers__media img { height: 320px; }
+  .page-banner { padding: 120px 6vw 56px; }
+  .univers-story__inner p { font-size: 0.96rem; }
 
   .collections__grid { grid-template-columns: 1fr; }
   .collection-card__media { height: 340px; }

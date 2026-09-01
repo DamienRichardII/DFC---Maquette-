@@ -9,6 +9,21 @@
   var WHATSAPP_NUMBER = '33600000000'; // à remplacer par le vrai numéro avant mise en ligne
   var CART_KEY = 'dfc_cart_v1';
 
+  var CATEGORY_INTROS = {
+    'accessoires': {
+      title: 'Bijoux',
+      text: 'Découvrez une sélection de bijoux inspirés de l’Afrique, de ses matières, de ses traditions et de ses savoir-faire. Chaque pièce est choisie pour son caractère, son authenticité et son élégance, avec ce mélange subtil entre héritage et modernité. Des bijoux pensés pour sublimer chaque style et apporter une touche unique à chaque tenue.'
+    },
+    'maison-decoration': {
+      title: 'Décoration',
+      text: 'Découvrez un univers de décoration inspiré de l’Afrique et de ses richesses artisanales. Des pièces ethniques, chaleureuses et pleines de caractère, choisies pour apporter une touche d’authenticité, d’élégance et d’ailleurs à votre intérieur.'
+    },
+    'secrets-de-femme': {
+      title: 'Secrets de femmes',
+      text: 'Entrez dans un univers inspiré des secrets de femmes ancestraux, transmis de génération en génération par nos mères et nos grand-mères. Des traditions, des rituels et des produits naturels puisés dans des savoir-faire d’autrefois, pour prendre soin de soi, de sa féminité et de son bien-être, tout simplement et au naturel.'
+    }
+  };
+
   var state = {
     activeCategory: 'all',
     cart: loadCart(),
@@ -76,7 +91,20 @@
     document.querySelectorAll('.shop-filters__tab').forEach(function (btn) {
       btn.classList.toggle('is-active', btn.dataset.cat === state.activeCategory);
     });
+    renderCategoryIntro();
     renderGrid();
+  }
+
+  /* ---------------- Intro éditoriale par catégorie ---------------- */
+  function renderCategoryIntro() {
+    var wrap = document.getElementById('shopCategoryIntro');
+    if (!wrap) return;
+    var intro = CATEGORY_INTROS[state.activeCategory];
+    if (!intro) {
+      wrap.innerHTML = '';
+      return;
+    }
+    wrap.innerHTML = '<h2>' + escapeHtml(intro.title) + '</h2><p>' + escapeHtml(intro.text) + '</p>';
   }
 
   /* ---------------- Grille produits ---------------- */

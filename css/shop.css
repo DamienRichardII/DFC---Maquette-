@@ -74,6 +74,12 @@
 
 /* ---------- Grille produits ---------- */
 .shop-section { background: var(--bg); padding: 70px 6vw 120px; }
+.shop-category-intro {
+  max-width: 680px; margin: 0 auto 56px; text-align: center;
+}
+.shop-category-intro:empty { margin: 0; }
+.shop-category-intro h2 { font-size: clamp(1.5rem, 2.4vw, 2rem); margin-bottom: 16px; }
+.shop-category-intro p { font-size: 0.98rem; margin: 0; }
 .shop-grid {
   max-width: var(--container); margin: 0 auto;
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px;
