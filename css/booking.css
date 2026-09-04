@@ -1,0 +1,80 @@
+/* ===================================================
+   DFC — Réservation de rendez-vous (page Contact)
+   Fichier additif et indépendant de style.css / shop.css
+=================================================== */
+
+.booking { background: var(--bg); }
+
+.booking__widget {
+  max-width: 940px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 50px;
+  background: var(--sand); padding: 46px; border-radius: 2px;
+}
+
+/* ---------- Calendrier ---------- */
+.booking__cal-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 22px;
+}
+.booking__month {
+  font-family: var(--font-title); font-size: 1.15rem; font-weight: 600;
+  text-transform: capitalize;
+}
+.booking__nav {
+  width: 34px; height: 34px; border-radius: 50%;
+  border: 1px solid rgba(17,17,17,.2); background: transparent;
+  cursor: pointer; transition: var(--transition); font-size: .9rem;
+}
+.booking__nav:hover:not(:disabled) { background: var(--gold); border-color: var(--gold); color: #fff; }
+.booking__nav:disabled { opacity: .3; cursor: not-allowed; }
+
+.booking__weekdays {
+  display: grid; grid-template-columns: repeat(7, 1fr);
+  text-align: center; font-size: .7rem; text-transform: uppercase;
+  letter-spacing: .06em; color: var(--text-muted); margin-bottom: 10px;
+}
+.booking__days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+.booking__day {
+  aspect-ratio: 1 / 1; border: none; background: var(--bg);
+  border-radius: 50%; font-size: .85rem; font-family: var(--font-body);
+  cursor: pointer; transition: var(--transition); color: var(--dark);
+}
+.booking__day:hover:not(:disabled) { background: var(--gold-light); color: #fff; }
+.booking__day.is-selected { background: var(--gold); color: #fff; font-weight: 600; }
+.booking__day--pad { background: none; cursor: default; }
+.booking__day--disabled, .booking__day:disabled { opacity: .25; cursor: not-allowed; background: transparent; }
+
+/* ---------- Créneaux ---------- */
+.booking__slots h3 {
+  font-size: 1rem; margin-bottom: 20px; text-transform: capitalize;
+  font-family: var(--font-title);
+}
+.booking__times {
+  display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; min-height: 44px;
+}
+.booking__time {
+  padding: 10px 16px; border: 1px solid rgba(17,17,17,.15); background: var(--bg);
+  border-radius: 2px; font-size: .85rem; font-family: var(--font-body);
+  cursor: pointer; transition: var(--transition); color: var(--dark);
+}
+.booking__time:hover { border-color: var(--gold); }
+.booking__time.is-selected { background: var(--gold); border-color: var(--gold); color: #fff; }
+
+.booking__confirm {
+  display: flex; width: 100%; opacity: .4; pointer-events: none; transition: opacity var(--transition);
+}
+.booking__confirm.is-active { opacity: 1; pointer-events: auto; }
+
+.booking__note {
+  font-size: .82rem; color: var(--text-muted); margin-top: 16px; margin-bottom: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .booking__widget { grid-template-columns: 1fr; padding: 34px 26px; gap: 34px; }
+}
+@media (max-width: 600px) {
+  .booking__widget { padding: 28px 18px; }
+  .booking__day { font-size: .78rem; }
+  .booking__time { padding: 9px 12px; font-size: .8rem; }
+}
