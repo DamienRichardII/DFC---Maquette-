@@ -21,7 +21,12 @@
   .navbar.is-scrolled .navbar__logo img { height: 64px; }
   .footer__brand img { height: 76px; }
 
-  .hero__slide:first-child { background-size: contain; background-position: center center; }
+  /* Sur mobile, les 5 photos passent en cover (cadrages validés) pour éviter les bandes noires */
+  .hero__slide--1 { background-size: cover; background-position: center 20%; }
+  .hero__slide--2 { background-size: cover; background-position: center 20%; }
+  .hero__slide--3 { background-size: cover; background-position: center top; }
+  .hero__slide--4 { background-size: cover; background-position: center 20%; }
+  .hero__slide--5 { background-size: cover; background-position: center top; }
 
   .navbar__nav {
     position: fixed; top: 0; right: 0; height: 100vh; width: min(340px, 82vw);
