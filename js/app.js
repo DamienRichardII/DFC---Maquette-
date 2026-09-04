@@ -102,7 +102,13 @@
     var slider = document.getElementById('heroSlider');
     var dotsWrap = document.getElementById('heroDots');
     if (!slider) return;
-    var slides = Array.prototype.slice.call(slider.querySelectorAll('.hero__slide'));
+    var allSlides = Array.prototype.slice.call(slider.querySelectorAll('.hero__slide'));
+    // Sur desktop (>860px), les photos au format portrait sont retirées du diaporama
+    // pour éviter les bandes noires : seule la 1ère photo (format paysage) reste affichée.
+    var isDesktop = window.matchMedia('(min-width: 861px)').matches;
+    var slides = isDesktop
+      ? allSlides.filter(function (s) { return s.dataset.portrait !== 'true'; })
+      : allSlides;
     if (slides.length <= 1) return;
 
     var current = 0;
