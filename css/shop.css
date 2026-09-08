@@ -205,6 +205,17 @@
 .cart-drawer__total { display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 16px; }
 .cart-drawer__footer .btn { width: 100%; }
 
+.cart-drawer__card-checkout { margin-top: 18px; padding-top: 18px; border-top: 1px dashed rgba(17,17,17,.12); }
+.cart-drawer__card-lead { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 10px; }
+.cart-drawer__card-input {
+  width: 100%; padding: 11px 14px; margin-bottom: 10px; font-size: 0.88rem;
+  border: 1px solid rgba(17,17,17,.15); border-radius: 2px; font-family: inherit; background: #fff;
+}
+.cart-drawer__card-input:focus { outline: none; border-color: var(--dark, #111); }
+.cart-drawer__card-pay { width: 100%; }
+.cart-drawer__card-pay[disabled] { opacity: 0.6; cursor: not-allowed; }
+.cart-drawer__card-error { color: #b3261e; font-size: 0.8rem; margin-top: 10px; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .shop-grid { grid-template-columns: repeat(3, 1fr); }

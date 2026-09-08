@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paiement annulé — Dieynissa Fashion Création</title>
+<meta name="description" content="Votre paiement a été annulé chez Dieynissa Fashion Création.">
+<meta name="theme-color" content="#111111">
+<meta name="robots" content="noindex">
+
+<!-- Favicons -->
+<link rel="icon" href="assets/logo/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/logo/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/logo/favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/logo/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<style>
+  .payment-status { padding: 70px 6vw 120px; max-width: 720px; margin: 0 auto; text-align: center; }
+  .payment-status h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 18px; }
+  .payment-status p { color: var(--text-muted); line-height: 1.7; margin-bottom: 14px; }
+  .payment-status .btn { margin: 6px; }
+</style>
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <span class="loader__mark">DFC</span>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo" aria-label="Accueil — Dieynissa Fashion Création">
+      <img src="assets/logo/dieynissa-header-logo.png" alt="Dieynissa Fashion Création" width="220" height="150">
+    </a>
+
+    <nav class="navbar__nav" id="navMenu" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="boutique.html" class="nav-link">Boutique</a></li>
+        <li><a href="collections.html" class="nav-link">Collections</a></li>
+        <li><a href="univers.html" class="nav-link">Notre univers</a></li>
+        <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="boutique.html" class="btn btn--gold navbar__cta">Voir la boutique</a>
+    </nav>
+
+    <button class="navbar__burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ BANNIÈRE ============ -->
+<section class="page-banner">
+  <p class="page-banner__crumb"><a href="index.html">Accueil</a> / Paiement annulé</p>
+  <h1>Paiement annulé</h1>
+</section>
+
+<!-- ============ MESSAGE ============ -->
+<section class="payment-status">
+  <h2>Votre paiement a été annulé</h2>
+  <p>Aucun montant n'a été débité. Votre panier est toujours disponible si vous souhaitez finaliser votre commande, par carte ou via WhatsApp.</p>
+  <a href="boutique.html" class="btn btn--gold">Retour à la boutique</a>
+  <a href="https://wa.me/33600000000" target="_blank" rel="noopener" class="btn btn--outline-dark">Nous contacter sur WhatsApp</a>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="assets/logo/dieynissa-footer-logo.png" alt="Dieynissa Fashion Création" width="230" height="157">
+      <p>L'élégance africaine réinventée, en région parisienne.</p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Navigation pied de page">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="boutique.html">Boutique</a>
+      <a href="collections.html">Collections</a>
+      <a href="univers.html">Notre univers</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="footer__contact">
+      <h4>Contact</h4>
+      <a href="https://instagram.com/dieynissa_fashion_creation_2" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/33600000000" target="_blank" rel="noopener">WhatsApp</a>
+      <address>39 bd de la Muette<br>95140 Garges-lès-Gonesse</address>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> Dieynissa Fashion Création. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/33600000000" target="_blank" rel="noopener" class="float-whatsapp" aria-label="Nous contacter sur WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.01 3C9.38 3 4 8.38 4 15.01c0 2.35.68 4.55 1.86 6.4L4 29l7.78-1.84a11.9 11.9 0 0 0 4.23.78h.01c6.63 0 12.01-5.38 12.01-12.01C28.02 8.38 22.64 3 16.01 3zm0 21.7h-.01a9.66 9.66 0 0 1-4.93-1.35l-.35-.21-4.63 1.09 1.11-4.51-.23-.37a9.63 9.63 0 0 1-1.49-5.15c0-5.34 4.35-9.69 9.7-9.69 2.59 0 5.02 1.01 6.85 2.85a9.62 9.62 0 0 1 2.84 6.84c0 5.35-4.35 9.7-9.86 9.7zm5.31-7.26c-.29-.15-1.72-.85-1.99-.94-.27-.1-.46-.15-.66.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.33-1.44a8.7 8.7 0 0 1-1.61-2c-.17-.29-.02-.44.13-.59.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.66-1.59-.91-2.18-.24-.57-.48-.5-.66-.51h-.56c-.19 0-.51.07-.78.36s-1.02 1-1.02 2.44 1.05 2.83 1.19 3.02c.15.19 2.06 3.14 4.99 4.4.7.3 1.24.48 1.67.61.7.22 1.34.19 1.84.12.56-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34z"/></svg>
+</a>
+
+<script src="js/app.js"></script>
+</body>
+</html>

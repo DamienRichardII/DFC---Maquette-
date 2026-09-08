@@ -185,6 +185,14 @@
         <span class="cart-drawer__total-value">0,00 €</span>
       </div>
       <a class="btn btn--gold cart-drawer__whatsapp" target="_blank" rel="noopener" href="#">Commander sur WhatsApp</a>
+
+      <div class="cart-drawer__card-checkout">
+        <p class="cart-drawer__card-lead">Ou payez directement par carte bancaire :</p>
+        <input type="text" id="checkoutName" class="cart-drawer__card-input" placeholder="Nom complet" autocomplete="name">
+        <input type="email" id="checkoutEmail" class="cart-drawer__card-input" placeholder="Adresse email" autocomplete="email">
+        <button class="btn btn--outline-dark cart-drawer__card-pay" id="cardPayBtn" type="button">Payer par carte</button>
+        <p class="cart-drawer__card-error" id="cardPayError" style="display:none;"></p>
+      </div>
     </div>
   </div>
 </div>

@@ -8,6 +8,8 @@
 
   var WHATSAPP_NUMBER = '33600000000'; // à remplacer par le vrai numéro avant mise en ligne
   var CART_KEY = 'dfc_cart_v1';
+  var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpjZWZ2dnVweWRkaGRkbnhpZmxuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc5MjU2NTEsImV4cCI6MjEwMzUwMTY1MX0.EJDwxdHIKBWjqaGrhpiYDv1lLU3kL3NOZXhkKkaPGx4';
+  var CHECKOUT_FUNCTION_URL = 'https://zcefvvupyddhddnxifln.supabase.co/functions/v1/create-checkout-session';
 
   var CATEGORY_INTROS = {
     'accessoires': {
@@ -277,7 +279,67 @@
     drawer.querySelector('.cart-drawer__overlay').addEventListener('click', closeCart);
     drawer.querySelector('.cart-drawer__close').addEventListener('click', closeCart);
 
+    var cardPayBtn = document.getElementById('cardPayBtn');
+    if (cardPayBtn) cardPayBtn.addEventListener('click', payByCard);
+
     renderCart();
+  }
+
+  /* ---------------- Paiement par carte (Stripe Checkout) ---------------- */
+  function payByCard() {
+    var btn = document.getElementById('cardPayBtn');
+    var errorEl = document.getElementById('cardPayError');
+    var nameInput = document.getElementById('checkoutName');
+    var emailInput = document.getElementById('checkoutEmail');
+    if (!btn || !errorEl || !nameInput || !emailInput) return;
+
+    function showError(msg) {
+      errorEl.textContent = msg;
+      errorEl.style.display = 'block';
+    }
+    errorEl.style.display = 'none';
+
+    if (!state.cart.length) {
+      showError('Votre panier est vide.');
+      return;
+    }
+    var name = nameInput.value.trim();
+    var email = emailInput.value.trim();
+    if (!name) { showError('Merci de renseigner votre nom.'); return; }
+    if (!email || email.indexOf('@') === -1) { showError('Merci de renseigner un email valide.'); return; }
+
+    var items = state.cart.map(function (line) {
+      var p = DFC_PRODUCTS.find(function (x) { return String(x.id) === String(line.id); });
+      return p ? { slug: p.slug, quantity: line.qty } : null;
+    }).filter(Boolean);
+
+    if (!items.length) { showError('Votre panier est vide.'); return; }
+
+    btn.disabled = true;
+    var originalLabel = btn.textContent;
+    btn.textContent = 'Redirection vers le paiement…';
+
+    fetch(CHECKOUT_FUNCTION_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': 'Bearer ' + SUPABASE_ANON_KEY
+      },
+      body: JSON.stringify({ items: items, customer: { name: name, email: email } })
+    })
+      .then(function (res) { return res.json().then(function (data) { return { ok: res.ok, data: data }; }); })
+      .then(function (result) {
+        if (!result.ok || !result.data || !result.data.url) {
+          throw new Error((result.data && result.data.error) || 'Une erreur est survenue.');
+        }
+        window.location.href = result.data.url;
+      })
+      .catch(function (err) {
+        showError(err.message || 'Une erreur est survenue, merci de réessayer.');
+        btn.disabled = false;
+        btn.textContent = originalLabel;
+      });
   }
 
   function openCart() {
